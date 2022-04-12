@@ -1,0 +1,22 @@
+title 0.4: New note
+
+note over browser
+User writes something into the text field 
+and clicks the submit button
+end note
+
+note over browser
+Browser renders new DOM with new note
+end note
+
+note over browser
+Browser does a POST Request to the address .../new_note
+end note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
+
+note over server
+The server responds with status code 201 created.
+end note
+
+server-->browser: Status Code: 201 created
